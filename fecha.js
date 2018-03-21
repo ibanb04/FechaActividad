@@ -1,8 +1,12 @@
-class fecha{
+class Fecha{
   constructor(dia, mes, anio){
-    this.dia = dia;
-    this.mes = mes;
-    this.anio = anio;
+    if( this.esValida(dia,mes,anio) == 'valida'){   
+      this.dia = dia;
+      this.mes = mes;
+      this.anio = anio; 
+    }else{
+      alert('fecha invalida');
+    }
   }
 
   get dia(){
@@ -15,6 +19,16 @@ class fecha{
 
   get anio(){
     return this._anio;    
+  }
+
+  set dia(valor){
+    this._dia = valor;
+  }
+  set mes(valor){
+    this._mes = valor;
+  }
+  set anio(valor){
+    this._anio= valor;
   }
 
   esValida(dia, mes, anio){
@@ -50,7 +64,4 @@ class fecha{
   gringo(){
     return  this.mes+"/"+this.dia+"/"+this.anio;
   }
-  
-
-
 }
