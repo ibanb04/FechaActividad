@@ -97,59 +97,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script type="text/javascript">
- $( document ).ready(function() {
-class fecha{
-	constructor(dia, mes, anio){
-		this.dia = dia;
-		this.mes = mes;
-		this.anio = anio;
-	}
+  <script src="fecha.js"></script>
 
-	get dia(){
-		return this._dia;		
-	}
-
-	get mes(){
-		return this._mes;		
-	}
-
-	get anio(){
-		return this._anio;		
-	}
-
-	esValida(dia, mes, anio){
-		var res = "no valida";
-	 	var diasBisiesto =['31','29','31','30','31','30','31','31','30','31','30','31'];
-	 	var diasNoBisiesto =['31','28','31','30','31','30','31','31','30','31','30','31'];
-	 	if( anio>1990 && mes>0 && mes<=12 && dia>0 && dia<=31 )
-	 	if(bisiesto()){
-	 		if(dia <= diasBisiesto[mes] ){
-	 			res='valida';
-	 		}
-	 	}else{
-	 		if(dia <= diasNoBisiesto[mes] ){
-	 			res='valida';
-	 		}
-	 	}
-	 	return res;
-	}
-
-	bisiesto(){
-
-	}
-
-	latino(){
-		return  this.dia+"/"+this.mes+"/"+this.anio;
-	}
-	gringo(){
-		return  this.mes+"/"+this.dia+"/"+this.anio;
-	}
-
-
-}
-});
-  </script>  
 </body>
 
 </html>
