@@ -135,8 +135,17 @@ class fecha{
 	 	return res;
 	}
 
-	esBisiesto(){
+	bisiesto(){
+
 	}
+
+	latino(){
+		return  this.dia+"/"+this.mes+"/"+this.anio;
+	}
+	gringo(){
+		return  this.mes+"/"+this.dia+"/"+this.anio;
+	}
+
 
 }
 });
