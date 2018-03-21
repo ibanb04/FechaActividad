@@ -97,7 +97,35 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  
+<script type="text/javascript">
+ $( document ).ready(function() {
+class fecha{
+	constructor(dia, mes, anio){
+		this.dia = dia;
+		this.mes = mes;
+		this.anio = anio;
+	}
+
+	get dia(){
+		return this._dia;		
+	}
+
+	get mes(){
+		return this._mes;		
+	}
+
+	get anio(){
+		return this._anio;		
+	}
+
+	esValida(){
+	}
+
+	esBisiesto(){
+	}
+}
+});
+  </script>  
 </body>
 
 </html>
